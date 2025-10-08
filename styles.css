@@ -1,13 +1,17 @@
 :root {
     --background-color: #0A090F;
     --border-radius: 8px;
-    --stroke: #333333;
-    --card-background-color: rgba(38, 38, 38, 0.29);
+    --stroke-color: #333333;
+    --card-background-color: #2626264a;
     --red-color: #EB0000;
     --blue-color: #1491FF;
     --text-color: #a3a3a3;
     --montserrat-font: 'Montserrat', sans-serif;
     --geist-mono-font: 'Geist Mono', sans-serif;
+    --text-light-weight: lighter;
+    --text-semi-bold: 600;
+    --text-black-weight: 900;
+    --text-bold: bold;
 }
 
 *, *::before, *::after {
@@ -25,3 +29,4 @@ body {
     font-family: var(--geist-mono-font);
     scroll-behavior: smooth;
 }
+
