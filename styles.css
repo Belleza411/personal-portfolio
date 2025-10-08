@@ -6,6 +6,8 @@
     --red-color: #EB0000;
     --blue-color: #1491FF;
     --text-color: #a3a3a3;
+    --montserrat-font: 'Montserrat', sans-serif;
+    --geist-mono-font: 'Geist Mono', sans-serif;
 }
 
 *, *::before, *::after {
@@ -20,5 +22,6 @@ body {
     width: 100vw;
     width: 100dvw;
     background-color: var(--background-color);
+    font-family: var(--geist-mono-font);
     scroll-behavior: smooth;
 }
