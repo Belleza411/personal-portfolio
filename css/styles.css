@@ -43,6 +43,14 @@ body {
     position: relative;
 }
 
+.intro-wrapper,
+.intro-wrapper .hero-wrapper,
+.intro-wrapper .hero-wrapper .profile-hero,
+.intro-wrapper .hero-wrapper .profile-hero .profile-hero-left,
+.intro-wrapper .hero-wrapper .profile-hero .profile-hero-left .profile-image-card-wrapper {
+    overflow: visible;
+}
+
 .intro-wrapper .hero-wrapper {
     display: flex;
     flex-direction: column;
@@ -111,27 +119,23 @@ body {
     height: 100%;
 }
 
-.intro-wrapper .hero-wrapper .profile-hero .profile-hero-right
-
 .intro-wrapper .hero-wrapper .profile-hero .profile-hero-left {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     margin-right: 3rem;
 }
 
 .intro-wrapper .hero-wrapper .profile-hero .profile-hero-left .profile-image-card-wrapper {
-    width: auto;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-left: 18rem;
+    width: 100%;
+    max-width: 28.438rem;
+    position: relative;
 }
 
 .intro-wrapper .hero-wrapper .profile-hero .profile-hero-left .profile-image-card-wrapper .profile-card {
     position: relative;
-    width: 28.438rem;
-    height: 28.438rem;
+    width: 100%;
+    aspect-ratio: 1 / 1;
 }
 
 .intro-wrapper .hero-wrapper .profile-hero .profile-hero-left .profile-image-card-wrapper img {
@@ -139,16 +143,18 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center top;
+    display: block;
     clip-path: polygon(
-        0.1% 94.2%,
-        0.1% 0.1%,
-        99% 0.1%,
-        99% 6.2%,
+        0% 94.2%,
+        0% 0%,
+        99.1% 0%,
+        99.1% 6.2%,
         100% 7.1%,
-        100% 99.9%,
-        6.1% 99.9%,
-        0.1% 94.2%
-    );}
+        100% 100%,
+        6.1% 100%,
+        0% 94.2%
+    );
+}
 
 .intro-wrapper .hero-wrapper .profile-hero .profile-hero-left .profile-image-card-wrapper svg {
     position: absolute;
@@ -226,7 +232,7 @@ body {
     font-family: var(--geist-mono-font);
     width: 60%;
     line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: clamp(0.5rem, 2vw, 1.1rem);
 }
 
 .intro-wrapper .hero-wrapper .profile-hero .profile-hero-right .profile-hero-right-wrapper .profile-hero-btn {
