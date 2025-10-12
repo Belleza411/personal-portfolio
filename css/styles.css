@@ -20,7 +20,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 .center {
@@ -105,7 +104,7 @@ body {
 .intro-wrapper .hero-wrapper .hero-header-wrapper .is-first h1,
 .intro-wrapper .hero-wrapper .hero-header-wrapper .is-middle,
 .intro-wrapper .hero-wrapper .hero-header-wrapper .is-last {
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: 4rem;
 }
 
 .intro-wrapper .hero-wrapper .profile-hero {
@@ -230,22 +229,27 @@ body {
 .intro-wrapper .hero-wrapper .profile-hero .profile-hero-right .profile-hero-right-wrapper .me p {
     color: #fff;
     font-family: var(--geist-mono-font);
-    width: 60%;
+    width: 25rem;
     line-height: 1.5;
-    font-size: clamp(0.5rem, 2vw, 1.1rem);
+    font-size: clamp(0.7rem, 3vw, 1.1rem);
 }
 
 .intro-wrapper .hero-wrapper .profile-hero .profile-hero-right .profile-hero-right-wrapper .profile-hero-btn {
-    margin-top: 1.2rem;
+    margin-top: 2rem;
 }
 
-.intro-wrapper .hero-wrapper .profile-hero .profile-hero-right .profile-hero-right-wrapper .profile-hero-btn button {
-    border: none;
+.intro-wrapper .hero-wrapper .profile-hero .profile-hero-right .profile-hero-right-wrapper .profile-hero-btn a {
     padding: 0.75rem 1rem;
     font-size: 0.85rem;
     border-radius: var(--border-radius);
     font-family: var(--geist-mono-font);
     cursor: pointer;
+    text-decoration: none;
+}
+
+.intro-wrapper .hero-wrapper .profile-hero .profile-hero-right .profile-hero-right-wrapper .profile-hero-btn .get-in-touch {
+    background-color: #fff;
+    color: #000;
 }
 
 .intro-wrapper .hero-wrapper .profile-hero .profile-hero-right .profile-hero-right-wrapper .profile-hero-btn .view-projects {
