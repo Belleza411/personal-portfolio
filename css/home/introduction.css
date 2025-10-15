@@ -439,15 +439,19 @@
     .intro-wrapper .hero-wrapper .hero-header-wrapper .is-last {
         margin-left: 40%;
     }
+
+    .intro-wrapper .hero-wrapper .hero-header-wrapper .is-first h1 {
+        margin-left: 40%;
+    }
+
+    .intro-wrapper .hero-wrapper .hero-header-wrapper .is-first div {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 350px) {
     .intro-wrapper .hero-wrapper .hero-header-wrapper .is-last {
         margin-left: 30%;
-    }
-
-    .intro-wrapper .hero-wrapper .hero-header-wrapper .is-first div {
-        display: none;
     }
 
     .intro-wrapper .hero-wrapper .hero-header-wrapper .is-first h1 {
