@@ -1,0 +1,437 @@
+.about-me-wrapper {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 0.95fr 1fr;
+    margin: 0 auto;
+    font-family: var(--geist-mono-font);
+    margin-top: 5rem;
+    min-height: 60vh;
+    border: 1px solid white;
+}
+
+.about-me-wrapper .about-me {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 100%;
+    padding-right: 1rem;
+}
+
+.about-me-wrapper .about-me .about-me-content {
+    width: 28rem;
+    max-width: 600px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.about-me-wrapper .about-me h2 {
+    color: #fff;
+}
+
+.about-me-wrapper .about-me h2 span {
+    color: var(--red-color);
+}
+
+.about-me-wrapper .about-me p {
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+    font-size: 1.05rem;
+    color: #cacaca;
+}
+
+.about-me-wrapper .about-me .about-me-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+.about-me-wrapper .about-me .about-me-btn a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-radius: var(--border-radius);
+    padding: 0.4rem 1rem;
+}
+
+.about-me-wrapper .about-me .about-me-btn .github {
+    background-color: var(--blue-color);
+}
+
+.about-me-wrapper .about-me .about-me-btn .github img {
+    margin-right: 0.8rem;
+}
+
+.about-me-wrapper .about-me .about-me-btn .github span {
+    margin-left: 0.8rem;
+}
+
+.about-me-wrapper .about-me .about-me-btn .more-about-me {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--stroke-color);
+}
+
+.about-me-wrapper .about-me .about-me-btn .more-about-me span {
+    margin-left: 0.8rem;
+}
+
+.about-me-wrapper .about-me .about-me-btn .more-about-me,
+.about-me-wrapper .about-me .about-me-btn .github {
+    cursor: pointer;
+}
+
+.about-me-wrapper .what-i-do-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card {
+    position: relative;
+    aspect-ratio: 1 / 1.25;
+    max-width: 35rem;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card svg {
+    position: absolute;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(
+        0% 94.2%,
+        0% 0%,
+        99.1% 0%,
+        99.1% 6.2%,
+        100% 7.1%,
+        100% 100%,
+        6.1% 100%,
+        0% 94.2%
+    );
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-header .material-symbols-outlined {
+    color: #fff;
+    font-size: 1.7rem;
+    margin-left: -0.2rem;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-header h3 {
+    color:#fff;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-description {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    font-weight: var(--text-medium);
+    letter-spacing: 0.04rem;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .download-cv-btn button {
+    border: 1px solid var(--stroke-color);
+    background-color: var(--card-background-color);
+    border-radius: 20px;
+    color: #fff;
+    padding: 0.7rem 1.4rem;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-card {
+    position: relative;
+    aspect-ratio: 1 / 1;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-card svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.2rem 1.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(
+        0% 94.2%,
+        0% 0%,
+        99.1% 0%,
+        99.1% 6.2%,
+        100% 7.1%,
+        100% 100%,
+        6.1% 100%,
+        0% 94.2%
+    );
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-icon,
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-icon {
+    color: var(--red-color);
+    font-size: 1.68rem;
+    margin-bottom: 0.3rem;
+    margin-left: -0.2rem;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-title,
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-title
+{
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-description,
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-description {
+    color: var(--text-color);
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 {
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1.2rem 1.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--stroke-color);
+}
+
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-title {
+    width: 100%;
+}
+
+@media screen and (max-width: 1040px) {
+    .about-me-wrapper {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: 3rem;
+    }
+
+    .about-me-wrapper .about-me {
+        margin-left: -0.8rem;
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about-me-wrapper .about-me .about-me-content {
+        width: 100%;
+    }
+    
+    
+    .about-me-wrapper .what-i-do-section {
+        align-items: center;
+        justify-content: center;
+        margin-left: -5.5rem;
+    }
+    
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .download-cv-btn button {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.75rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content {
+        position: static;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-description {
+        font-size: clamp(0.8rem, 2vw, 1.1rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-me-wrapper {
+        padding: 0 1rem;
+    }
+
+    .about-me-wrapper .about-me {
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .about-me-wrapper .about-me p {
+        font-size: 0.9rem;
+        width: 80%;
+    }
+
+    .about-me-wrapper .about-me .about-me-content {
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 17.2%;
+    }
+
+    .about-me-wrapper .what-i-do-section {
+        margin-left: -1rem;
+        padding-right: 1rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card {
+        max-width: 28rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-description {
+        font-size: clamp(0.5rem, 2vw, 0.8rem);
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-icon,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-icon {
+        font-size: 1.4rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-title,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-title
+    {
+        font-size: 0.7rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-description,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-description {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .about-me-wrapper .about-me .about-me-content {
+        margin-left: 13%;
+    }
+
+    .about-me-wrapper .what-i-do-section {
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-me-wrapper {
+        padding: 0 1rem;
+    }
+
+    .about-me-wrapper .about-me h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-me-wrapper .about-me p {
+       font-size: 0.75rem;
+    }
+
+    .about-me-wrapper .about-me .about-me-content {
+        margin-left: 14.5%;
+    }
+
+    .about-me-wrapper .about-me .about-me-btn .github img {
+        width: 1.2rem;
+    }
+
+    .about-me-wrapper .about-me .about-me-btn a {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.7rem;
+    }
+    
+    .about-me-wrapper .about-me .about-me-btn .arrow {
+        font-size: 0.8rem;
+    }
+
+    .about-me-wrapper .what-i-do-section {
+        padding: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card {
+        max-width: 95%; 
+        width: 100%;
+        aspect-ratio: 1 / 1.6; 
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content {
+        padding: 1.5rem; 
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-header .material-symbols-outlined {
+        font-size: 1.3rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-header h3 {
+        font-size: 0.8rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-description {
+        font-size: 0.7rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .download-cv-btn button {
+        padding: 0.5rem 1rem;
+        font-size: 0.6rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card {
+       aspect-ratio: 1 / 1.5;
+       height: 30rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-me-wrapper .about-me .about-me-content {
+        margin-left: 21%;
+    }
+
+    .about-me-wrapper .about-me .about-me-btn {
+        flex-direction: column;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card {
+        max-width: 95%; 
+        width: 100%;
+        aspect-ratio: 1 / 2; 
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .about-me-wrapper .about-me p {
+       font-size: 0.65rem;
+    }
+
+    .about-me-wrapper .about-me .about-me-content {
+        margin-left: 21.5%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .about-me-wrapper .about-me .about-me-content {
+        margin-left: 10%;
+    }
+}

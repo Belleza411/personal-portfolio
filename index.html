@@ -6,10 +6,11 @@
     <title>Aevan Belleza</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/home/introduction.css">
+    <link rel="stylesheet" href="css/home/about-me.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=code" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <section class="intro-wrapper">
@@ -70,8 +71,76 @@
         </div>      
     </section>
     <section class="about-me-wrapper">
-        <div class="about-me-left"></div>
-        <div class="about-me-right"></div>
+        <div class="about-me">
+            <div class="about-me-content">
+                <h2>About me <span>.</span></h2>
+                <p>I’m Aevan Belleza, a Bachelor of Information Technology student at Southern Institute of Technology with strong interest in web-application and full-stack development based in New Zealand.</p>
+                <p>I specialize in building modern applications using .NET Core Web API and Angular, and I enjoy applying practices like Test-Driven Development (TDD) to write clean, reliable code.</p>
+                <div class="about-me-btn">
+                    <a href="https://github.com/Belleza411" target="_blank" class="github center">
+                        <img src="images/icons/github-icon.png" alt="Github">
+                        View My Github
+                        <span class="material-symbols-outlined arrow">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                    <a href="about-me.html" class="more-about-me center">
+                        More on About Me
+                        <span class="material-symbols-outlined arrow">
+                            arrow_right_alt
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <article class="what-i-do-section">
+            <div class="what-i-do-main-card">
+                <svg viewBox="0 0 518 595" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 561.023V0.5H513V31.9941V32.1989L513.144 32.3449L517.5 36.7696V594.5H31.6998L0.5 561.023Z" 
+                        fill="#2626264a" 
+                        stroke="#333333"
+                        stroke-width="1"/>
+                </svg>
+                <div class="main-card-content">
+                    <div class="card-header">
+                        <span class="material-symbols-outlined">person</span>
+                        <h3>What I Do</h3>
+                    </div>
+                    <p class="card-description">
+                        I develop modern web applications using Angular for dynamic and responsive front-end experiences and .NET for building secure and scalable back-end services. My focus is on creating efficient, user-friendly solutions that solve real-world problems.
+                    </p>
+                    <div class="download-cv-btn">
+                        <button>Download CV</button>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <svg viewBox="0 0 518 518" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.5 487.823V0.5H513V31.9941V32.1989L513.144 32.3449L517.5 36.7696V517.5H31.6998L0.5 487.823Z" 
+                                    fill="#2626264a" 
+                                    stroke="#333333"
+                                    stroke-width="1"/>
+                            </svg>
+                            <div class="skill-content">
+                                <span class="material-symbols-outlined skill-icon">code</span>
+                                <h4 class="skill-title">Project Management</h4>
+                                <p class="skill-description">
+                                    I apply SDLC and scope management principles to plan, organize, and document projects.
+                                    Using tools like WBS and ERD, I ensure projects stay structured and efficient.
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-content-2">
+                                <span class="material-symbols-outlined skill-icon">code</span>
+                                <h4 class="skill-title">Full-Stack Development</h4>
+                                <p class="skill-description">
+                                    End-to-end application development using Angular, .NET, and SQL Server to build scalable, robust web solutions from database to user interface
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
     </section>
 </body>
 </html>
