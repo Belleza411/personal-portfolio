@@ -38,6 +38,6 @@ body, html {
     font-family: var(--geist-mono-font);
     scroll-behavior: smooth;
     overflow-x: hidden;
-    min-width: 325px;
+    min-width: 350px;
 }
 

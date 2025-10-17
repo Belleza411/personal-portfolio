@@ -193,6 +193,7 @@
         6.1% 100%,
         0% 94.2%
     );
+    padding-bottom: 1rem;
 }
 
 .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-icon,
@@ -228,6 +229,7 @@
     flex-direction: column;
     background-color: var(--card-background-color);
     border: 1px solid var(--stroke-color);
+    overflow: hidden;
 }
 
 .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-title {
@@ -333,6 +335,11 @@
     .about-me-wrapper .what-i-do-section {
         padding: 0 1rem;
     }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-description,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-description {
+        font-size: clamp(0.2rem, 5vw, 0.4rem);
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -401,6 +408,156 @@
     .about-me-wrapper .what-i-do-section .what-i-do-main-card {
        aspect-ratio: 1 / 1.5;
        height: 30rem;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .about-me-wrapper {
+        padding: 0 0.5rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card {
+        max-width: 100%;
+        width: 100%;
+        height: auto; /* Let it grow naturally */
+        aspect-ratio: auto; /* Remove fixed aspect ratio */
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content {
+        padding: 1rem;
+        position: relative;
+        height: auto;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-header {
+        margin-bottom: 0.5rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-description {
+        font-size: 0.6rem;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .download-cv-btn {
+        margin-top: 0.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .download-cv-btn button {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.5rem;
+        margin-top: 0;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+        margin-top: 0.7rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-card {
+        aspect-ratio: auto; /* Remove aspect ratio */
+        min-height: auto;
+        height: auto;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-card svg {
+        display: none;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 {
+        padding: 0.8rem;
+        position: relative; /* Change from absolute */
+        border-radius: 8px;
+        clip-path: none;
+        background-color: var(--card-background-color);
+        border: 1px solid var(--stroke-color);
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 {
+        clip-path: none; /* Remove clip-path for now to see layout */
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-icon,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-icon {
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-title,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-title {
+        font-size: 0.65rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-description,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-description {
+        font-size: 0.5rem;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-me-wrapper {
+        padding: 0 0.3rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content {
+        padding: 0.8rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-header .material-symbols-outlined {
+        font-size: 1.2rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-header h3 {
+        font-size: 0.75rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .card-description {
+        font-size: 0.55rem;
+        line-height: 1.3;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .download-cv-btn button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.45rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid {
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 {
+        padding: 0.6rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-icon,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-icon {
+        font-size: 1rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-title,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-title {
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-description,
+    .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-description {
+        font-size: 0.45rem;
+        line-height: 1.3;
     }
 }
 
