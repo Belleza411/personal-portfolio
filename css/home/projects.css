@@ -95,6 +95,32 @@
     width: fit-content;
 }
 
+.projects-section .see-more-projects {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: clamp(0.7rem, 10vw, 0.8rem);
+    color: var(--text-color);
+    gap: 0.4rem;
+    margin-top: 3rem;
+    white-space: nowrap;
+}
+
+.projects-section .see-more-projects a {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--stroke-color);
+    background-color: var(--card-background-color);
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    gap: 0.4rem;
+}
+
 @media screen and (max-width: 1285.60px) {
     .projects-section {
         margin: 0 clamp(3%, 12vw, 18.5%);
@@ -133,6 +159,15 @@
         padding: 0 clamp(15%, 10vw, 18.5%);
         margin: 0;
     }
+
+    .projects-section .see-more-projects a {
+        padding: 0.8rem 1.3rem;
+        font-size: 0.75rem;
+    }
+
+    .projects-section .see-more-projects a .arrow {
+        font-size: 0.8rem;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -165,5 +200,14 @@
 
     .projects-section .projects-grid .project-card .project-date {
         font-size: 0.6em;
+    }
+
+    .projects-section .see-more-projects a {
+        padding: 0.5rem 1rem;
+        font-size: 0.6rem;
+    }
+
+    .projects-section .see-more-projects a .arrow {
+        font-size: 0.8rem;
     }
 }
