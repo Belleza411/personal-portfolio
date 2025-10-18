@@ -18,10 +18,7 @@ export const projects = [
                 name: "SQL Server",
                 path: "Sql-server.png"
             },
-            {
-                name: "Entity Framework Core",
-                path: "ef-core.png"
-            },
+
             {
                 name: "JSON Web Tokens",
                 path: "jwt.png"
