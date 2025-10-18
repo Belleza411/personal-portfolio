@@ -381,6 +381,7 @@
         max-width: 95%; 
         width: 100%;
         aspect-ratio: 1 / 1.6; 
+        max-height: 55vh;
     }
 
     .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content {
