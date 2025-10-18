@@ -4,3 +4,4 @@ import { generateProjects } from "./helpers/generateProjects.js";
 document.addEventListener("DOMContentLoaded", () => {
     generateProjects(projects);
 })
+

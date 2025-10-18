@@ -36,7 +36,7 @@ export const projects = [
     {
         title: "Task Manager",
         projectDate: "May 15, 2025 - August 7, 2025",
-        description: "A showcase of recent applications I've built using modern web technologies and best practices.",
+        description: "A full-stack task management system developed using Angular (frontend) and ASP.NET Core Web API (backend). This project demonstrates modern full-stack development practices, including secure user authentication, real-time task tracking, and database-driven CRUD operations.",
         projectImagePath: "images/projects/task-manager.png",
         projectImageAlt: "Task Manager",
         techUsed: [
