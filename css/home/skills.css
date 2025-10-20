@@ -57,22 +57,21 @@
     background-color: var(--card-background-color);
     border: 1px solid var(--stroke-color);
     border-radius: 12px;
-    /* padding: 2rem;   */
     min-width: 80px;
     min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
 }
 
 .skills-section .tech-column .tech-card i {
     font-size: 2rem;
-    border-radius: 100%;
     padding: 0.4rem;
 }
 
-.skills-section .tech-column .tech-card .devicon-microsoftsqlserver-plain {
-    background-color: #fff;
+.skills-section .tech-column .tech-card .sql-server {
+    width: 2.2rem;
 }
 
 .skills-section .tech-column .tech-card .devicon-notion-plain {
@@ -80,11 +79,11 @@
 }
 
 .skills-section .tech-column .tech-card .next {
-    width: 2.5rem;
+    width: 2.3rem;
 }
 
 .skills-section .tech-column .tech-card .figma {
-    width: 2rem;
+    width: 1.9rem;
 }
 
 .skills-section .tech-column .tech-card .ts  {
@@ -109,7 +108,7 @@
 }
 
 .skills-section .tech-column .tech-card .sql {
-    width: 2.6rem;
+    width: 2.4rem;
 }
 
 .skills-section .tech-column .tech-card .html,
@@ -118,5 +117,9 @@
 }
 
 .skills-section .tech-column .tech-card .node-js {
-    width: 2.8rem;
+    width: 2.4rem;
+}
+
+.skills-section .tech-column .tech-card .devicon-javascript-plain {
+    border-radius: 8px;
 }

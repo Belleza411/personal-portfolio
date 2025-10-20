@@ -1,4 +1,4 @@
-export function generateProjects(projects) {
+export const generateProjects = (projects) => {
     const projectsGrid = document.getElementById('projects-grid')
 
     projects.forEach(project => {
