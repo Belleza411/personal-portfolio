@@ -3,9 +3,12 @@
     font-family: var(--geist-mono-font);
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: #29292926;
-    height: auto;
     position: relative;
+    max-width: 100%;
+    min-height: 80vh;
+    min-width: 50%;
 }
 
 .skills-section .skills-box {
@@ -17,7 +20,7 @@
 
 .skills-section .skill-header {
     position: absolute;
-    padding-left: 18%;
+    padding-left: 17%;
     padding-top: 2rem;
     z-index: 999;
 }
@@ -29,18 +32,20 @@
 
 .skills-section .skill-header h2 span {
     color: var(--red-color);
+    margin-left: -0.8rem;
 }
 
 .skills-section .skill-header p {
     color: #cacaca;
-    width: 53%;
+    max-width: 53%;
 }
 
 .skills-section .tech-column {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    width: 100%;
     gap: 1.8rem;
+    align-items: center;
 }
 
 .skills-section .tech-column .tech-row {
@@ -51,6 +56,13 @@
 
 .skills-section .tech-column .tech-row:nth-child(even) {
     margin-left: -4rem;
+}
+
+.skills-section .more {
+    color: var(--text-color);
+    position: absolute;
+    text-align: center;
+    bottom: 1rem;
 }
 
 .skills-section .tech-column .tech-card {
@@ -122,4 +134,110 @@
 
 .skills-section .tech-column .tech-card .devicon-javascript-plain {
     border-radius: 8px;
+}
+
+@media screen and (max-width: 1285.60px) {
+    .skills-section .skill-header {
+        padding-left: 12%;
+    }
+
+    .skills-section .skill-header p {
+        max-width: 70%;
+    }
+
+    .skills-section .tech-column .tech-row {
+        justify-content: center; 
+    }
+    
+    .skills-section .tech-column .tech-row:nth-child(even) {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .skills-section .skill-header {
+        padding-left: 18.5%;
+    }
+
+    .skills-section .tech-column .tech-row {
+        gap: 1.5rem; 
+    }
+
+    .skills-section .skill-header p {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .skills-section .tech-column .tech-card {
+        min-width: 70px; 
+        min-height: 70px;
+    }
+    
+    .skills-section .tech-column .tech-card i {
+        font-size: 1.75rem; 
+    }
+
+    .skills-section .tech-column .tech-card img {
+        width: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .skills-section .skill-header {
+        padding-left: 15%;
+    }
+
+    .skills-section .tech-column {
+        gap: 1.2rem;
+    }
+
+    .skills-section .tech-column .tech-row {
+        gap: 0.8rem; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skills-section .skill-header {
+        padding: 0 7%;
+    }
+
+    .skills-section .skill-header h2 {
+        font-size: 1rem;
+    }
+
+    .skills-section .skill-header p {
+        font-size: 0.6rem;
+    }
+
+    .skills-section .skills-box {
+        box-shadow: inset 0 0 200px 120px var(--background-color);
+    }
+
+    .skills-section .tech-column {
+        gap: 0.7rem;
+        padding-right: 2.7rem !important;
+    }
+
+    .skills-section .tech-column .tech-card {
+        min-width: 40px; 
+        min-height: 40px;
+        border-radius: 8px;
+    }
+    
+    .skills-section .tech-column .tech-card i {
+        font-size: 1.2rem; 
+    }
+
+    .skills-section .tech-column .tech-card img {
+        width: 1.3rem !important;
+    }
+
+    .skills-section .tech-column .tech-card .devicon-dotnetcore-plain {
+        font-size: 1.6rem;
+    }
+
+    .skills-section .tech-column .tech-card .devicon-react-original {
+        font-size: 1.5rem;
+    }
 }
