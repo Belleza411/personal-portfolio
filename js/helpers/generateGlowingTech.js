@@ -1,7 +1,7 @@
 export const generateGlowingTech = () => {
     document.querySelectorAll('.glow').forEach(icon => {
         const color = icon.dataset.color;
-        icon.style.filter = `drop-shadow(0 0 12px ${color})`;
+        icon.style.filter = `drop-shadow(0 0 .6rem ${color})`;
 
         const card = icon.closest('.tech-card');
 
