@@ -195,6 +195,12 @@
     padding-bottom: 1rem;
 }
 
+.about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-icon {
+    font-size: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-top: 0.2rem;
+}
+
 .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content .skill-icon,
 .about-me-wrapper .what-i-do-section .what-i-do-main-card .main-card-content .skills-grid .skill-content-2 .skill-icon {
     color: var(--red-color);
