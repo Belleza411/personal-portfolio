@@ -2,7 +2,7 @@ export const generateProjects = (projects) => {
     const projectsGrid = document.getElementById('projects-grid')
 
     projects.forEach(project => {
-        const projectCard = document.createElement("div");
+        const projectCard = document.createElement("article");
         projectCard.className = "project-card"
 
         projectCard.innerHTML = `
