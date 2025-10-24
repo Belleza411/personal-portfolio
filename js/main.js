@@ -1,10 +1,12 @@
-import { projects } from "./data/projects.js";
 import { generateGlowingTech } from "./helpers/generateGlowingTech.js";
-import { generateProjects } from "./helpers/generateProjects.js";
 import { toggleHamburgerMenu } from "./helpers/toggleHamburgerMenu.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-    generateProjects(projects);
+document.addEventListener("DOMContentLoaded", async () => {
+    if(window.location.pathname.endsWith('index.html')) {
+        const { projects } = await import("./data/projects.js");
+        const { generateProjects } = await import("./helpers/generateProjects.js");
+        generateProjects(projects);
+    }
     generateGlowingTech();
     toggleHamburgerMenu();
 })
