@@ -341,6 +341,12 @@
         font-size: 2rem;
     }
 
+    .experience-section .experience-wrapper .experience-header p,
+    .education-section .education-wrapper .education-header p {
+        color: var(--text-color);
+        font-size: 0.8rem;
+    }
+
     .about-me-section .about-me-wrapper .about-me .about-me-profile {
         max-width: 28rem;
         width: 100%;
@@ -357,6 +363,10 @@
 
     .education-section .education-wrapper .my-education .education-experience {
         gap: 3.5rem;
+    }
+
+    .experience-section .experience-wrapper .my-experience .work-experience .work-card {
+        padding-right: 2rem;
     }
 }
 
