@@ -1,7 +1,7 @@
-export const generateProjects = (projects) => {
+export const generateProjects = (projects, num = 3, isProjectPage = false) => {
     const projectsGrid = document.getElementById('projects-grid')
 
-    projects.forEach(project => {
+    projects.slice(0, num).forEach(project => {
         const projectCard = document.createElement("article");
         projectCard.className = "project-card"
 
@@ -12,13 +12,13 @@ export const generateProjects = (projects) => {
             </p>
             <p class="project-description">${project.description}</p>
             <div class="project-image">
-                <img src="${project.projectImagePath}" alt="${project.projectImageAlt}">
+                <img src="${isProjectPage ? "../" : ""}${project.projectImagePath}" alt="${project.projectImageAlt}">
             </div>
             <div class="project-tech-used">
                 ${project.techUsed.map(tech => {
                     return `
                     <div class="tech">
-                        <img src="images/icons/${tech.path}" alt="${tech.name}">
+                        <img src="${isProjectPage ? "../" : ""}images/icons/${tech.path}" alt="${tech.name}">
                         <span>${tech.name}</span>
                     </div>
                     `
@@ -27,7 +27,7 @@ export const generateProjects = (projects) => {
             </div>
             <div class="view-project">
                 <a href="#" target="_blank" class="center">
-                    <img src="images/icons/github-icon.png" alt="Github">
+                    <img src="${isProjectPage ? "../" : ""}images/icons/github-icon.png" alt="Github">
                     View On Github
                     <span class="material-symbols-outlined arrow">
                         arrow_right_alt
