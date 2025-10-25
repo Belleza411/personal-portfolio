@@ -1,4 +1,6 @@
-.about-me-section {
+.about-me-section,
+.education-section,
+.experience-section {
     padding: 0 18%;
 }
 
@@ -156,11 +158,128 @@
     color: #fff;
 }
 
-/* @media screen and (max-width: 1285.60px) {
-    .about-me-section .about-me-wrapper .about-me .about-me-profile {
-        aspect-ratio: 1 / 2;
-    }
-}  */
+.experience-section,
+.education-section {
+    margin-top: 4rem;
+}
+
+.experience-section .experience-wrapper .experience-header,
+.education-section .education-wrapper .education-header {
+    width: 100%;
+}
+
+.experience-section .experience-wrapper .experience-header h2,
+.education-section .education-wrapper .education-header h2 {
+    color: #fff;
+}
+
+.experience-section .experience-wrapper .experience-header p,
+.education-section .education-wrapper .education-header p {
+    color: var(--text-color);
+}
+
+.education-section .education-wrapper .my-education {
+    display: flex;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.education-section .education-wrapper .my-education .education-logos {
+    padding-top: 1rem;
+}
+
+.education-section .education-wrapper .my-education .education-experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.education-section .education-wrapper .my-education .education-experience {
+    gap: 4rem;
+}
+
+.experience-section .experience-wrapper .my-experience .experience-logos .experience,
+.education-section .education-wrapper .my-education .education-logos .education {
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.experience-section .experience-wrapper .my-experience .experience-logos .experience img,
+.education-section .education-wrapper .my-education .education-logos .education img {
+    max-width: 3rem;
+}
+
+.experience-section .experience-wrapper .my-experience .experience-logos .experience .line,
+.education-section .education-wrapper .my-education .education-logos .education .line {
+    width: 1px;
+    background-color: var(--stroke-color);
+    height: 100%;
+    margin: 0.8rem 0;
+}
+
+.experience-section .experience-wrapper .my-experience .work-experience .work-card,
+.education-section .education-wrapper .my-education .education-experience .education-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    background-color: var(--card-background-color);
+    border: 1px solid var(--stroke-color);
+    color: #fff;
+    font-family: var(--geist-mono-font);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.experience-section .experience-wrapper .my-experience .work-experience .work-card h4,
+.education-section .education-wrapper .my-education .education-experience .education-card h4 {
+    font-weight: var(--text-semi-bold);
+}
+
+.experience-section .experience-wrapper .my-experience .work-experience .work-card .date,
+.education-section .education-wrapper .my-education .education-experience .education-card .date {
+    font-size: 0.8rem;
+    color: #727272;
+}
+
+.education-section .education-wrapper .my-education .education-experience .education-card .experience {
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    max-width: 30rem;
+    width: 100%;
+}
+
+.experience-section .experience-wrapper .my-experience {
+    display: flex;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.experience-section .experience-wrapper .my-experience .experience-logos {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-section .experience-wrapper .my-experience .work-experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.experience-section .experience-wrapper .my-experience .work-experience .work-card ul {
+    margin-left: 1rem;
+    max-width: 30rem;
+    width: 100%;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    line-height: 1.4;
+}
 
 @media screen and (max-width: 1040px) {
     .about-me-section .about-me-wrapper .about-me {
@@ -193,6 +312,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .about-me-section,
+    .education-section,
+    .experience-section {
+        padding: 0 8%;
+    }
+
     .about-me-section .about-me-wrapper .hero-heading h1 {
         font-size: 3rem;
     }
@@ -207,7 +332,8 @@
 }
 
 @media screen and (max-width: 480px) {
-    .about-me-section {
+    .about-me-section,
+    .education-section {
         padding: 0 5%;
     }
 
@@ -223,6 +349,15 @@
     .about-me-section .about-me-wrapper .about-me .about-me-left .line-wrapper span:last-of-type {
         font-size: 0.5rem;
     }
+
+    .experience-section .experience-wrapper .my-experience .experience-logos .experience img,
+    .education-section .education-wrapper .my-education .education-logos .education img {
+        max-width: 2rem;
+    }
+
+    .education-section .education-wrapper .my-education .education-experience {
+        gap: 3.5rem;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -237,5 +372,9 @@
 
     .about-me-section .about-me-wrapper .about-me .about-me-left {
         margin-left: 1rem;
+    }
+
+    .education-section .education-wrapper .my-education .education-experience {
+        gap: 1.6rem;
     }
 }
