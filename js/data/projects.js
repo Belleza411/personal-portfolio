@@ -97,5 +97,61 @@ export const projects = [
             }
         ],
         githubLink: "#"
+    },
+    {
+        title: "BookWise",
+        projectDate: "January 11, 2025 - February 13, 2025",
+        description: "BookWise is a production-grade full-stack web application that serves as a library management system for a university environment. It comprises an admin dashboard and user-facing features to manage books, users, borrowing, returns and more. It’s designed to be scalable, secure, and maintainable.",
+        projectImagePath: "images/projects/book-wise.png",
+        projectImageAlt: "BookWise is a production-grade full-stack web application that serves as a library management system for a university environment. It comprises an admin dashboard and user-facing features to manage books, users, borrowing, returns and more. It’s designed to be scalable, secure, and maintainable.",
+        techUsed: [
+            {
+                name: "NextJS",
+                path: "next-js.png"
+            },
+            {
+                name: "React",
+                path: "react.png"
+            },
+            {
+                name: "Typescript",
+                path: "Typescript.png"
+            },
+            {
+                name: "Auth.js",
+                path: "auth-js.png"
+            },
+            {
+                name: "PostgreSQL",
+                path: "postgre-sql.png"
+            },
+            {
+                name: "Redis",
+                path: "redis.png"
+            }
+        ],
+        githubLink: "https://github.com/Belleza411/university-libary-aevan"
+    },
+    {
+        title: "EasyTask - Todo List",
+        projectDate: "May 1, 2025 - July 28, 2025 ",
+        description: "A simple and interactive to-do list application built using Angular to practice and understand the core concepts of the framework. The app allows users to add, edit, and delete tasks while learning about data binding, component interaction, and Angular directives.",
+        projectImagePath: "images/projects/easy-task.png",
+        projectImageAlt: "A simple and interactive to-do list application built using Angular to practice and understand the core concepts of the framework. The app allows users to add, edit, and delete tasks while learning about data binding, component interaction, and Angular directives.",
+        techUsed: [
+            {
+                name: "Angular",
+                path: "angular.png"
+            },
+            {
+                name: "Typescript",
+                path: "Typescript.png"
+            },
+            {
+                name: "Javascript",
+                path: "javascript.png"
+            },
+        ],
+        githubLink: "https://github.com/Belleza411/first-angular-app"
     }
 ]
