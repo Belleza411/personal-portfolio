@@ -26,7 +26,7 @@ export const generateProjects = (projects, num = 3, isProjectPage = false) => {
 
             </div>
             <div class="view-project">
-                <a href="#" target="_blank" class="center">
+                <a href="${project.githubLink}" target="_blank" class="center">
                     <img src="${isProjectPage ? "../" : ""}images/icons/github-icon.png" alt="Github">
                     View On Github
                     <span class="material-symbols-outlined arrow">
