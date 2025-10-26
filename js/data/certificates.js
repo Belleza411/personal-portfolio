@@ -1,5 +1,12 @@
 export const certificates = [
     {
+        imagePath: "../images/certificates/ncea-2.png",
+        backgroundColor: "#B2B2B2",
+        title: "NCEA Level 2 Computing",
+        dateIssued: "December 7, 2023",
+        description: "Foundation certification in Level 2 Computing, demonstrating diligence and technical aptitude in core computing concepts and problem-solving."
+    },
+    {
         imagePath: "../images/certificates/ncea.png",
         backgroundColor: "#B5B5B5",
         title: "NCEA Level 3",
