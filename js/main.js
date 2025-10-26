@@ -10,6 +10,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         generateProjects(projects);
         generateGlowingTech();
     }
+
+    if(path.endsWith("projects.html")) {
+        const { projects } = await import("./data/projects.js");
+        const { generateProjects } = await import("./helpers/generateProjects.js");
+        generateProjects(projects, projects.length, true);
+    }
+    
     toggleHamburgerMenu();
 })
 
