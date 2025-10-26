@@ -16,6 +16,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         const { generateProjects } = await import("./helpers/generateProjects.js");
         generateProjects(projects, projects.length, true);
     }
+
+    if(path.endsWith("certificates.html")) {
+        const { generateCertificate } = await import("./helpers/generateCertificate.js");
+        generateCertificate();
+    }
     
     toggleHamburgerMenu();
 })
