@@ -387,4 +387,8 @@
     .education-section .education-wrapper .my-education .education-experience {
         gap: 1.6rem;
     }
+
+    .contact-section .contact-wrapper .contact-hero-heading p:nth-child(2) {
+        margin-left: 2.8rem !important;
+    }
 }
