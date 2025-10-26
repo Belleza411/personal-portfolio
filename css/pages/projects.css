@@ -142,10 +142,6 @@
 }
 
 @media screen and (max-width: 400px) {
-    .contact-section .contact-wrapper .contact-hero-heading p:nth-child(2) {
-        margin-left: 2.8rem !important;
-    }
-
     .project-section .project-header header h1:first-of-type {
         margin-left: 4rem;
     }

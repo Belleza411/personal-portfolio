@@ -239,3 +239,9 @@
         padding: 0 2rem 1rem 2rem;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .contact-section .contact-wrapper .contact-hero-heading p:nth-child(2) {
+        margin-left: 2.8rem !important;
+    }
+}
