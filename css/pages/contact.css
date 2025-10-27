@@ -55,8 +55,10 @@
 .main-contact-section .contact-header .contact-hero-left  .contact-hero-left-top .me p {
     font-family: var(--geist-mono-font);
     color: #fff;
+    line-height: 1.5;
     letter-spacing: 0.1rem;
     font-size: 0.9rem;
+    margin-bottom: 1rem;
 }
 
 .main-contact-section .contact-header .contact-hero-left .line-wrapper {
