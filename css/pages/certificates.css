@@ -178,10 +178,6 @@
         margin-left: 4.5rem;
     }
 
-    .certificates-section {
-        padding: 0;
-    }
-
     .certificates-section .certificates-header header h1 {
         font-size: clamp(3rem, 10vw, 4rem);
     }
