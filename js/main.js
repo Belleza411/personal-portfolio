@@ -27,6 +27,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         const { generateCertificate } = await import("./helpers/generateCertificate.js");
         generateCertificate();
     }
+
+    // If path is "contact.html" then i only want to use this feature "sendContactForm"
+    if(path.endsWith("contact.html")) {
+        const { sendContactForm } = await import("./helpers/sendContactForm.js");
+        sendContactForm();
+    }
     
     // This calls the method to all pages
     toggleHamburgerMenu();

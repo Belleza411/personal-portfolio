@@ -81,27 +81,27 @@
             </div>
         </div>
     <main class="main-contact-wrapper">
-        <form>
+        <form id="contact-form" method="post">
             <div class="contact-info">
                 <p>
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="text" name="from_name" id="name" placeholder="Your Name" required>
                 </p>
                 <p>
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder="Your Email">
+                    <input type="text" name="reply_to" id="email" placeholder="Your Email" required>
                 </p>
             </div>
             <div class="textarea">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                <textarea name="message" id="message" placeholder="Your Message" required></textarea>
             </div>
-            <div class="send-btn">
-                <button class="center">
-                    <span class="material-symbols-outlined">
-                    send
+            <div class="send-btn" id="send-btn">
+                <button class="center" type="submit">
+                    <span class="material-symbols-outlined" id="btn-icon">
+                        send
                     </span>
-                    Send
+                    <span id="btn-text">Send</span>
                 </button>
             </div>
         </form>
@@ -145,6 +145,16 @@
             </div>
         </main>
     </section>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        ( function() {
+            emailjs.init({
+                publicKey: "89fAiuDFgtEiEPkgU",
+            });
+        })();
+    </script>
     <script type="module" src="../js/main.js"></script>
 </body>
 </html>
