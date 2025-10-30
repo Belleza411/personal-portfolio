@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const { projects } = await import("./data/projects.js");
         const { generateProjects } = await import("./helpers/generateProjects.js");
         const { generateGlowingTech } = await import("./helpers/generateGlowingTech.js");
-        generateProjects(projects);
+        generateProjects(projects); // See index.html line 201
         generateGlowingTech();
     }
 
@@ -19,13 +19,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     if(path.endsWith("projects.html")) {
         const { projects } = await import("./data/projects.js");
         const { generateProjects } = await import("./helpers/generateProjects.js");
-        generateProjects(projects, projects.length, true);
+        generateProjects(projects, projects.length, true); // See projects.html line 88
     }
 
     // If path is "certificates/html", then I only want to use "generateCertificate", and other features wil not be used
     if(path.endsWith("certificates.html")) {
         const { generateCertificate } = await import("./helpers/generateCertificate.js");
-        generateCertificate();
+        generateCertificate(); // See certificates.html line 85
     }
 
     // If path is "contact.html" then i only want to use this feature "sendContactForm"
