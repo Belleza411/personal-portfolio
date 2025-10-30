@@ -108,7 +108,7 @@
 
 .contact-section .contact-wrapper .contact-card .contact-main-content .contact-overview h4,
 .contact-section .contact-wrapper .contact-card .contact-main-content .contact-connect h4 {
-    color: #afafaf;
+    color: #e1e1e1;
     font-weight: var(--text-semi-bold);
     font-family: var(--montserrat-font);
     margin-bottom: 0.7rem;
@@ -116,13 +116,18 @@
 
 .contact-section .contact-wrapper .contact-card .contact-main-content .contact-overview a,
 .contact-section .contact-wrapper .contact-card .contact-main-content .contact-connect a {
-    color: #fff;
+    color: var(--text-color);
     font-family: var(--roboto-mono-font);
     font-weight: var(--text-regular);
     font-size: 0.8rem;
     margin-bottom: 0.7rem;
     cursor: pointer;
     text-decoration: none;
+}
+
+.contact-section .contact-wrapper .contact-card .contact-main-content .contact-overview a:hover,
+.contact-section .contact-wrapper .contact-card .contact-main-content .contact-connect a:hover {
+    color: #fff;
 }
 
 .contact-section .contact-wrapper .contact-card .contact-main-content .contact-connect {
