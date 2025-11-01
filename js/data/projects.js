@@ -28,7 +28,7 @@ export const projects = [
                 path: "postman.png"
             }
         ],
-        githubLink: ""
+        githubLink: "https://github.com/Belleza411/NZWalks"
     },
     {
         title: "Task Manager",
@@ -62,7 +62,7 @@ export const projects = [
                 path: "postman.png"
             }
         ],
-        githubLink: "#"
+        githubLink: "https://github.com/Belleza411/fullstack-task-manager"
     },
     {
         title: "Auren - Personal Portfolio Tracker",
@@ -96,7 +96,7 @@ export const projects = [
                 path: "postman.png"
             }
         ],
-        githubLink: "#"
+        githubLink: "https://github.com/Belleza411/Auren.API"
     },
     {
         title: "BookWise",
