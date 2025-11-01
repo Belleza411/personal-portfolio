@@ -23,7 +23,7 @@ nav .nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-left: 2rem;
 }
 
@@ -36,6 +36,14 @@ nav .nav li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
+    border: 1px solid transparent;
+    padding: 0.5rem 0.7rem;
+}
+
+nav ul li a:hover {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: var(--border-radius);
 }
 
 nav .button-card {
